@@ -1,0 +1,16 @@
+﻿<Window x:Class="Examen_21_03_2022_SarabiaSantiago.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Examen_21_03_2022_SarabiaSantiago"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,26,0,0" TextWrapping="Wrap" Text="Examen 1" VerticalAlignment="Top" Foreground="#FF1FFD74" FontSize="25"/>
+        <Button Content="Add New Park" HorizontalAlignment="Center" Margin="0,116,0,0" VerticalAlignment="Top" Height="47" Width="169" Foreground="White" Background="#FF1FFD74" Click="Button_Click"/>
+        <Button Content="Add New Game" HorizontalAlignment="Center" VerticalAlignment="Center" Height="47" Width="168" Foreground="White" Background="#FF1FFD74" Click="Button_Click_1"/>
+        <Button Content="Retire a Game" HorizontalAlignment="Center" VerticalAlignment="Top" Height="47" Width="168" Foreground="White" Background="#FF1FFD74" Margin="0,276,0,0" Click="Button_Click_2"/>
+        <Button Content="Show" HorizontalAlignment="Center" VerticalAlignment="Top" Height="47" Width="168" Foreground="White" Background="#FF1FFD74" Margin="0,350,0,0" Click="Button_Click_3"/>
+    </Grid>
+</Window>

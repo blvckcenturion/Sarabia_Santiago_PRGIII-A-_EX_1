@@ -18,18 +18,61 @@ namespace Examen_21_03_2022_SarabiaSantiago
             return parks;
         }
 
-        public List<Park> addPark(string parkName)
+        public Park getPark(string parkName)
         {
-            parks.Add(new Park(parkName));
-            return parks;
+            foreach (Park park in parks)
+            {
+                if (park.ParkName.ToLower() == parkName.ToLower()) return park;
+            }
+            return new Park("invalid");
         }
 
-        public void addParkGame(string name, int maxCapacity, string parkName)
+        public bool addPark(string parkName)
         {
+            bool validPark = true;
+            foreach (Park park in parks)
+            {
+                if (parkName.ToLower() == park.ParkName.ToLower())
+                {
+                    validPark = false;
+                }
+            }
+            if (validPark) parks.Add(new Park(parkName));
+            return validPark;
+        }
+
+        public bool addParkGame(string name, int maxCapacity, string parkName)
+        {
+            bool validGame = true;
+            
+            for(int i = 0; i < parks.Count; i++)
+            {
+                if (parks[i].ParkName == parkName) {
+                    foreach(Game gm in parks[i].ParkGames)
+                    {
+                        if (gm.GameName == name) validGame = false;
+                    }
+                    if(validGame)
+                    {
+                        parks[i].ParkGames.Enqueue(new Game(name, maxCapacity));
+                    }
+                } 
+            }
+            return validGame;
+        }
+
+        public Game removeParkGame(string parkName)
+        {
+            Game gm = new Game("invalid", 0);
+
             for (int i = 0; i < parks.Count; i++)
             {
-                if (parks[i].ParkName == parkName) parks[i].ParkGames.Enqueue(new Game(name, maxCapacity));
+                if (parks[i].ParkName == parkName)
+                {
+                   gm = parks[i].ParkGames.Dequeue();
+                }
             }
+            return gm;
         }
 
         

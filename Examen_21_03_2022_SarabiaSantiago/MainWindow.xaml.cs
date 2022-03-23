@@ -22,36 +22,30 @@ namespace Examen_21_03_2022_SarabiaSantiago
     {
         ParkManager parkManager;
 
-        AddNewPark addNewPark;
-        AddNewGame addNewGame;
-        
-
         public MainWindow()
         {
             InitializeComponent();
             parkManager = new ParkManager();
-            addNewPark = new AddNewPark(parkManager);
-            addNewGame = new AddNewGame(parkManager);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            addNewPark.Show();
+            new AddNewPark(parkManager).Show();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            new AddNewGame(parkManager).Show();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
+            new RemoveAGame(parkManager).Show();
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-
+            new ShowPark(parkManager).Show();
         }
     }
 }

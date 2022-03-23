@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="RemoveAGame" Height="450" Width="800">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Center" Margin="0,26,0,0" TextWrapping="Wrap" Text="Remove Game" VerticalAlignment="Top" Foreground="#FF1FFD74" FontSize="25"/>
+        <TextBlock x:Name="txtError" HorizontalAlignment="Center" Margin="0,72,0,0" TextWrapping="Wrap" Text="Add a new Park" VerticalAlignment="Top" Foreground="#FFFD1F1F" FontSize="25" Visibility="Hidden"/>
+        <Button Content="Add Park" HorizontalAlignment="Center" Margin="0,358,0,0" VerticalAlignment="Top" Height="45" Width="152" Foreground="White" Background="#FF1FFD74" Click="Button_Click"/>
+        <TextBox x:Name="parkBox" HorizontalAlignment="Left" Margin="511,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" Height="35" FontSize="18" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="116,180,0,0" TextWrapping="Wrap" Text="Park Name " VerticalAlignment="Top" Foreground="#FF1FFD74" FontSize="20"/>
+
     </Grid>
 </Window>

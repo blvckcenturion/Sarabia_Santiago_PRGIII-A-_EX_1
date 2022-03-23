@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Santiago\\.nuget\\packages\\": {}
+    "C:\\Users\\SANTIAGO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Santiago\\source\\repos\\Examen_21_03_2022_SarabiaSantiago\\Examen_21_03_2022_SarabiaSantiago\\Examen_21_03_2022_SarabiaSantiago.csproj",
+      "projectUniqueName": "C:\\Users\\SANTIAGO\\Source\\Repos\\Sarabia_Santiago_PRGIII-A-_EX_1\\Examen_21_03_2022_SarabiaSantiago\\Examen_21_03_2022_SarabiaSantiago.csproj",
       "projectName": "Examen_21_03_2022_SarabiaSantiago",
-      "projectPath": "C:\\Users\\Santiago\\source\\repos\\Examen_21_03_2022_SarabiaSantiago\\Examen_21_03_2022_SarabiaSantiago\\Examen_21_03_2022_SarabiaSantiago.csproj",
-      "packagesPath": "C:\\Users\\Santiago\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Santiago\\source\\repos\\Examen_21_03_2022_SarabiaSantiago\\Examen_21_03_2022_SarabiaSantiago\\obj\\",
+      "projectPath": "C:\\Users\\SANTIAGO\\Source\\Repos\\Sarabia_Santiago_PRGIII-A-_EX_1\\Examen_21_03_2022_SarabiaSantiago\\Examen_21_03_2022_SarabiaSantiago.csproj",
+      "packagesPath": "C:\\Users\\SANTIAGO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SANTIAGO\\Source\\Repos\\Sarabia_Santiago_PRGIII-A-_EX_1\\Examen_21_03_2022_SarabiaSantiago\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Santiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SANTIAGO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

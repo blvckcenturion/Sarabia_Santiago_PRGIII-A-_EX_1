@@ -28,9 +28,32 @@ namespace Examen_21_03_2022_SarabiaSantiago
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if(nameBox.Text != "" && qtyBox.Text != "" && parkBox.Text != "")
+            txtError.Visibility = Visibility.Hidden;
+            int qty = 0;
+            bool isValidQty = int.TryParse(qtyBox.Text, out qty);
+            if(nameBox.Text != "" && qtyBox.Text != "" && parkBox.Text != "" && isValidQty)
             {
-                parkManager.addParkGame(nameBox.Text, int.Parse(qtyBox.Text), parkBox.Text);
+
+                if(parkManager.getPark(parkBox.Text).ParkName != "invalid")
+                {
+                    bool valid = parkManager.addParkGame(nameBox.Text, int.Parse(qtyBox.Text), parkBox.Text);
+                    if(!valid)
+                    {
+                        txtError.Visibility = Visibility.Visible;
+                        txtError.Text = "Game already exists in that park";
+                    } else
+                    {
+                        this.Close();
+                    }
+                } else
+                {
+                    txtError.Visibility = Visibility.Visible;
+                    txtError.Text = "Invalid park name";
+                }
+            } else
+            {
+                txtError.Visibility = Visibility.Visible;
+                txtError.Text = "Error, the inserted data is not valid";
             }
         }
     }

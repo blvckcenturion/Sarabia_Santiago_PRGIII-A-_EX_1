@@ -10,7 +10,7 @@
         <TextBlock HorizontalAlignment="Center" Margin="0,26,0,0" TextWrapping="Wrap" Text="Examen 1" VerticalAlignment="Top" Foreground="#FF1FFD74" FontSize="25"/>
         <Button Content="Add New Park" HorizontalAlignment="Center" Margin="0,116,0,0" VerticalAlignment="Top" Height="47" Width="169" Foreground="White" Background="#FF1FFD74" Click="Button_Click"/>
         <Button Content="Add New Game" HorizontalAlignment="Center" VerticalAlignment="Center" Height="47" Width="168" Foreground="White" Background="#FF1FFD74" Click="Button_Click_1"/>
-        <Button Content="Retire a Game" HorizontalAlignment="Center" VerticalAlignment="Top" Height="47" Width="168" Foreground="White" Background="#FF1FFD74" Margin="0,276,0,0" Click="Button_Click_2"/>
+        <Button Content="Retire a Game" HorizontalAlignment="Center" VerticalAlignment="Top" Height="47" Width="168" Foreground="White" Background="#FF1FFD74" Margin="0,272,0,0" Click="Button_Click_2"/>
         <Button Content="Show" HorizontalAlignment="Center" VerticalAlignment="Top" Height="47" Width="168" Foreground="White" Background="#FF1FFD74" Margin="0,350,0,0" Click="Button_Click_3"/>
     </Grid>
 </Window>

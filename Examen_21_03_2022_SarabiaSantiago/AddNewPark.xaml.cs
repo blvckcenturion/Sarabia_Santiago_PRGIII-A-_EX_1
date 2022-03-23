@@ -32,7 +32,14 @@ namespace Examen_21_03_2022_SarabiaSantiago
             txtError.Visibility = Visibility.Hidden;
             if (parkBox.Text != "")
             {
-                pk.addPark(parkBox.Text);
+                if (!pk.addPark(parkBox.Text))
+                {
+                    txtError.Visibility = Visibility.Visible;
+                    txtError.Text = "Park "+ parkBox.Text +" already exists";
+                } else
+                {
+                    this.Close();
+                };
             } else
             {
                 txtError.Visibility = Visibility.Visible;

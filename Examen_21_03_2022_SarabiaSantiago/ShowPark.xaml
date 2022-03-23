@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Examen_21_03_2022_SarabiaSantiago"
         mc:Ignorable="d"
-        Title="ShowPark" Height="450" Width="800">
+        Title="ShowPark" Height="550" Width="900">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Center" Margin="0,26,0,0" TextWrapping="Wrap" Text="Show All Game" VerticalAlignment="Top" Foreground="#FF1FFD74" FontSize="25"/>
+        <ListView x:Name="lstShow" Margin="79,138,84,125"/>
+        <Button Content="Show All" HorizontalAlignment="Left" Margin="79,451,0,0" VerticalAlignment="Top" Height="57" Width="737" Background="#FF1FFD74" Foreground="White" Click="Button_Click"/>
+        <TextBox x:Name="txtInput" HorizontalAlignment="Left" Margin="79,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="199" Height="28"/>
+        <Button Content="Find Park given a Game" HorizontalAlignment="Left" Margin="528,86,0,0" VerticalAlignment="Top" Height="28" Width="138" Background="#FF1FFD74" Foreground="White" Click="Button_Click_2"/>
+        <Button Content="Find a Park's games" HorizontalAlignment="Left" Margin="678,86,0,0" VerticalAlignment="Top" Height="28" Width="138" Background="#FF1FFD74" Foreground="White" Click="Button_Click_3"/>
+        <Button Content="Find games with certain capacity" HorizontalAlignment="Left" Margin="317,86,0,0" VerticalAlignment="Top" Height="28" Width="192" Background="#FF1FFD74" Foreground="White" Click="Button_Click_1"/>
+
     </Grid>
 </Window>

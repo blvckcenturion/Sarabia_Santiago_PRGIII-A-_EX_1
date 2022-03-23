@@ -8,8 +8,8 @@ namespace Examen_21_03_2022_SarabiaSantiago
 {
     public class Game
     {
-        string GameName { get; set; }
-        int MaxCapacity { get; set; }
+        public string GameName;
+        public int MaxCapacity;
 
         public Game(string GameName, int MaxCapacity)
         {

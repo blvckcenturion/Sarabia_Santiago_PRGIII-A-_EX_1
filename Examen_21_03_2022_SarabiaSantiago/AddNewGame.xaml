@@ -8,14 +8,15 @@
         Title="AddNewGame" Height="450" Width="800">
     <Grid>
         <TextBlock HorizontalAlignment="Center" Margin="0,26,0,0" TextWrapping="Wrap" Text="Add a new Game" VerticalAlignment="Top" Foreground="#FF1FFD74" FontSize="25"/>
-        <TextBox x:Name="nameBox" HorizontalAlignment="Left" Margin="511,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" Height="35" FontSize="18" TextAlignment="Center"/>
-        <TextBlock HorizontalAlignment="Left" Margin="116,142,0,0" TextWrapping="Wrap" Text="Game Name " VerticalAlignment="Top" Foreground="#FF1FFD74" FontSize="20"/>
+        <TextBox x:Name="nameBox" HorizontalAlignment="Left" Margin="511,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" Height="35" FontSize="18" TextAlignment="Center"/>
+        
+        <TextBlock HorizontalAlignment="Left" Margin="116,214,0,0" TextWrapping="Wrap" Text="Game Name " VerticalAlignment="Top" Foreground="#FF1FFD74" FontSize="20"/>
         <TextBlock x:Name="txtError" HorizontalAlignment="Center" Margin="0,72,0,0" TextWrapping="Wrap" Text="Add a new Park" VerticalAlignment="Top" Foreground="#FFFD1F1F" FontSize="25" Visibility="Hidden"/>
-        <Button Content="Add Park" HorizontalAlignment="Center" Margin="0,314,0,0" VerticalAlignment="Top" Height="45" Width="152" Foreground="White" Background="#FF1FFD74" Click="Button_Click"/>
-        <TextBox x:Name="qtyBox" HorizontalAlignment="Left" Margin="511,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" Height="35" FontSize="18" TextAlignment="Center"/>
-        <TextBlock HorizontalAlignment="Left" Margin="116,228,0,0" TextWrapping="Wrap" Text="Game Capacity " VerticalAlignment="Top" Foreground="#FF1FFD74" FontSize="20"/>
-        <TextBox x:Name="parkBox" HorizontalAlignment="Left" Margin="511,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" Height="35" FontSize="18" TextAlignment="Center"/>
-        <TextBlock HorizontalAlignment="Left" Margin="116,74,0,0" TextWrapping="Wrap" Text="Park Name " VerticalAlignment="Top" Foreground="#FF1FFD74" FontSize="20"/>
+        <Button Content="Add Park" HorizontalAlignment="Center" Margin="0,358,0,0" VerticalAlignment="Top" Height="45" Width="152" Foreground="White" Background="#FF1FFD74" Click="Button_Click"/>
+        <TextBox x:Name="qtyBox" HorizontalAlignment="Left" Margin="511,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" Height="35" FontSize="18" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="116,292,0,0" TextWrapping="Wrap" Text="Game Capacity " VerticalAlignment="Top" Foreground="#FF1FFD74" FontSize="20"/>
+        <TextBox x:Name="parkBox" HorizontalAlignment="Left" Margin="511,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" Height="35" FontSize="18" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="116,138,0,0" TextWrapping="Wrap" Text="Park Name " VerticalAlignment="Top" Foreground="#FF1FFD74" FontSize="20"/>
 
     </Grid>
 </Window>
